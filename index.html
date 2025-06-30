@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshil Doshi | Researcher</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* body {
+            background: url('{{ url_for('static', filename='img/cp.jpg') }}') no-repeat center center fixed;
+            background-size: cover;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+        } */
+        .navbar, .card {
+            background-color: rgba(31, 31, 31, 0.9);
+        }
+        .navbar-brand, .nav-link, h1, h2, h5, p, a {
+            color: #e5e5e5;
+        }
+        .nav-link:hover, a:hover {
+            color: #0d6efd;
+        }
+        .btn-outline-dark {
+            border-color: #e5e5e5;
+            color: #e5e5e5;
+        }
+        .btn-outline-dark:hover {
+            background-color: #e5e5e5;
+            color: #121212;
+        }
+        .btn-outline-primary {
+            border-color: #0d6efd;
+            color: #0d6efd;
+        }
+        .btn-outline-primary:hover {
+            background-color: #0d6efd;
+            color: #fff;
+        }
+        section {
+            background-color: rgba(18, 18, 18, 0.8);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Darshil Doshi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container text-center mt-5" id="about">
+        <!-- <img src="{{ url_for('static', filename='img/yourphoto.jpg') }}" class="rounded-circle shadow" width="150" alt="Darshil Doshi"> -->
+        <img src="static/img/yourphoto.jpg" class="rounded-circle shadow" width="150" alt="Darshil Doshi">
+        <h1 class="mt-4 fw-bold">Hi, I'm Darshil</h1>
+        <p class="lead">Deep Learning Researcher | Physicist</p>
+        <div class="mt-3">
+            <a href="/static/DarshilDoshi_CV.pdf" class="btn btn-outline-dark">Download CV</a>
+        </div>
+        <div class="mt-4">
+            <a href="https://scholar.google.com/citations?user=4dp-dEMAAAAJ&hl=en" class="text-decoration-none mx-2">Google Scholar</a>
+            <a href="https://github.com/d-doshi" class="text-decoration-none mx-2">GitHub</a>
+            <a href="https://www.linkedin.com/in/darshil-doshi-2b010b7b/" class="text-decoration-none mx-2">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container" id="projects">
+        <h2 class="fw-bold mb-4">Selected Publications and Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #f0f0f0">Cracking PRNGs with Transformers</h5>
+                        <p class="card-text">Transformers can crack cryptographic primitives like Pseudo-random number sequences. We explain how!</p>
+                        <a href="https://arxiv.org/abs/2502.10390" class="btn btn-sm btn-outline-primary">ICML 2025</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #f0f0f0">In-Context Learning</h5>
+                        <p class="card-text">Transformers can solve unseen problems by looking at in-context examples. We uncover the underlying mechanisms!</p>
+                        <a href="https://arxiv.org/abs/2406.02550" class="btn btn-sm btn-outline-primary">NeruIPS 2024 (oral)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #f0f0f0">Grokking</h5>
+                        <p class="card-text">Deep learning models often acquire abilities with steep jumps, called grokking. We explain how to this occurs in modular arithmetic tasks!</p>
+                        <a href="https://arxiv.org/abs/2310.13061" class="btn btn-sm btn-outline-primary">ICLR 2024</a>
+                        <a href="https://arxiv.org/abs/2406.03495" class="btn btn-sm btn-outline-primary">ICLR 2024 BGPT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #f0f0f0">Critical Initialization</h5>
+                        <p class="card-text">Deep learning models can only be trained if initialized preperly. We explore how to design architectures and initialize parameters for better training.</p>
+                        <a href="https://arxiv.org/abs/2111.12143" class="btn btn-sm btn-outline-primary">NeurIPS 2023 (spotlight)</a>
+                        <a href="https://arxiv.org/abs/2206.13568" class="btn btn-sm btn-outline-primary">AutoInit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <!-- <section class="container" id="skills">
+        <h2 class="fw-bold mb-4">Skills</h2>
+        <div class="row text-center">
+            <div class="col">Python</div>
+            <div class="col">PyTorch</div>
+            <div class="col">LaTeX</div>
+            <div class="col">Git</div>
+            <div class="col">Scientific Writing</div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section class="container mb-5" id="contact">
+        <h2 class="fw-bold mb-3">Contact</h2>
+        <p>Email: <a href="mailto:darshil.h.doshi@gmail.com" class="text-decoration-none">darshil.h.doshi@gmail.com</a></p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
